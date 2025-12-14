@@ -21,17 +21,10 @@ namespace ShowCritOnLog
         public static Logger Logger = new Logger();
 
 
-        public static string delimiter = "|";
-        public static string true_str = "1";
-        public static string false_str = "0";
-
-        public static State State;
 
         [Hook(ModHookType.AfterConfigsLoaded)]
         public static void AfterConfig(IModContext context)
         {
-
-            Plugin.State = context.State;
             Directory.CreateDirectory(ConfigDirectories.ModPersistenceFolder);
 
             Config = ModConfig.LoadConfig(ConfigDirectories.ConfigPath);

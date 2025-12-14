@@ -18,8 +18,6 @@ namespace ShowCritOnLog
             //parse input
             //int index = __instance.DmgType.IndexOf(Plugin.delimiter, StringComparison.Ordinal);
 
-            string temp_damage_type;
-            string temp_crit_result = "";
             string returnval = "";
             //Plugin.Logger.Log("aaaa" + __instance.DmgType);
 
